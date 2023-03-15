@@ -1,7 +1,10 @@
+import { Header, Hero } from "./components";
+
 function App() {
   return (
     <main>
-      <p>Landing Page</p>
+      <Header />
+      <Hero />
     </main>
   );
 }
