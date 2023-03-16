@@ -4,7 +4,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <section className="shadow-sm flex justify-between items-center px-4 py-2 md:py-4 lg:py-6">
+    <section className="absolute top-0 left-0 w-full shadow flex justify-between items-center px-4 h-[75px]">
       {/* log */}
       <div className="flex items-center gap-2">
         <img src={logo} alt="logoImage" className="w-8 h-8 md:w-12 md:h:12" />
@@ -24,9 +24,9 @@ const Header = () => {
       </ul>
 
       {/* contact us */}
-
-      <button className="border-2 border-[#b22fae] rounded-3xl px-4 py-1 lg:py-2 font-bold">
+      <button class="relative inline-block px-6 py-1 lg:px-8 lg:py-2 border-2 rounded-full border-[#b22fae] text-[#b22fae] font-bold bg-transparent overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#b22fae] hover:text-white">
         Contact Us
+        <span class="absolute inset-y-0 left-0 border-[#b22fae] text-white w-0 transition-all duration-500 ease-in-out hover:w-full"></span>
       </button>
 
       {/* menu icon */}
