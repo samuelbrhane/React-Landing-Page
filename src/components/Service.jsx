@@ -8,6 +8,9 @@ import AnimatedCard from "./AnimatedCard";
 const Service = () => {
   return (
     <section className="pt-10 px-4 lg:px-12 xl:px-18 pb-4">
+      <h1 className="text-center text-[#b22fae] font-semibold text-xl mb-4">
+        QUALITY SERVICES
+      </h1>
       <p className="text-center font-bold text-xl mb-3">List of Our Services</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 sm:gap-4 md:gap-6 lg:gap-12">
         {services.map((service, index) => (

@@ -18,7 +18,7 @@ export const serviceStat = [
   {
     title: "Volunteer Developers",
     value: 76,
-    time: 180,
+    time: 130,
     suffix: "+",
   },
 ];
