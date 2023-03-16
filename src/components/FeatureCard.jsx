@@ -5,16 +5,16 @@ const FeatureCard = ({ feature }) => {
   const { icon, title, desc, id } = feature;
   return (
     <div className="flex justify-center mb-3">
-      <div className="flex gap-3">
+      <div className="flex gap-6">
         <div
-          className={`bg-gradient-to-r from-green-300 via-[#2343a3] ${colors[id]} w-[70px] h-[70px] rounded-xl flex justify-center items-center text-3xl text-white`}
+          className={`bg-gradient-to-r mt-2 from-green-300 via-[#2343a3] ${colors[id]} w-[70px] h-[70px] rounded-3xl flex justify-center items-center text-3xl text-white`}
         >
           {icon}
         </div>
 
-        <div className="w-[80%]">
-          <h1 className="text-xl font-bold xl:text-2xl">{title}</h1>
-          <p className="text-sm font-light">{desc}</p>
+        <div className="w-[70%]">
+          <h1 className="text-xl font-bold xl:text-2xl mb-2">{title}</h1>
+          <p className="text-sm">{desc}</p>
         </div>
       </div>
     </div>
