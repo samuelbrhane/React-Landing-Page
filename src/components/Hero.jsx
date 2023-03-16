@@ -11,7 +11,7 @@ const Hero = () => {
       }}
     >
       <div className="flex items-start justify-center w-full pt-[50px]">
-        <div className="flex items-center  flex-col justify-center lg:w-[50%] xl:w-[45%]">
+        <div className="flex items-center  flex-col justify-center lg:w-[50%] xl:w-[45%] pt-[20px]">
           <h1 className="text-2xl tracking-tight text-center font-bold text-gray-900 sm:text-6xl md:text-7xl mb-4">
             Get More Done With eSafe
           </h1>
@@ -20,9 +20,9 @@ const Hero = () => {
             platform.
           </p>
 
-          <button class="relative inline-block px-12 py-3 border-2 rounded-full border-[#b22fae] text-[#b22fae] font-bold bg-transparent overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#b22fae] hover:text-white">
+          <button className="relative inline-block px-12 py-3 border-2 rounded-full border-[#b22fae] text-[#b22fae] font-bold bg-transparent overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#b22fae] hover:text-white">
             Get Started
-            <span class="absolute inset-y-0 left-0 border-[#b22fae] text-white w-0 transition-all duration-500 ease-in-out hover:w-full"></span>
+            <span className="absolute inset-y-0 left-0 border-[#b22fae] text-white w-0 transition-all duration-500 ease-in-out hover:w-full"></span>
           </button>
         </div>
 
