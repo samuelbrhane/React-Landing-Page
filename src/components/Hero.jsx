@@ -14,8 +14,8 @@ const Hero = () => {
             platform.
           </p>
 
-          <button className="relative inline-block px-12 py-3 border-2 rounded-full border-[#b22fae] text-[#b22fae] font-bold bg-transparent overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#b22fae] hover:text-white">
-            Get Started
+          <button className="relative inline-block px-8 py-3 border-2 rounded-full border-[#b22fae] text-[#b22fae] font-bold bg-transparent overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#b22fae] hover:text-white">
+            Explore Now
             <span className="absolute inset-y-0 left-0 border-[#b22fae] text-white w-0 transition-all duration-500 ease-in-out hover:w-full"></span>
           </button>
         </div>

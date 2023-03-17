@@ -4,6 +4,9 @@ import { AiFillThunderbolt } from "react-icons/ai";
 import { RiUserSharedFill } from "react-icons/ri";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { MdContactPhone } from "react-icons/md";
+import feature from "../assets/feature4.png";
+import feature1 from "../assets/feature5.png";
+import { AiFillCheckCircle, AiOutlineRight } from "react-icons/ai";
 
 const features = [
   {
@@ -34,7 +37,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="featureBg w-full min-h-[70vh] px-4 lg:px-12 xl:px-18">
+    <div className="featureBg w-full min-h-[70vh] px-4 lg:px-24 xl:px-30">
       <h1 className="mt-[80px] text-center text-[#b22fae] font-semibold text-xl">
         QUALITY FEATURES
       </h1>
@@ -45,6 +48,79 @@ const Features = () => {
         {features.map((feature, index) => (
           <FeatureCard key={index} feature={feature} />
         ))}
+      </div>
+
+      {/* Feature content */}
+      <div className="flex flex-col lg:flex-row my-20 lg:gap-14 xl:gap-[70px] items-center">
+        <div className="lg:w-[55%]">
+          <img src={feature} alt="featureImage" className="w-full" />
+        </div>
+        <div className="lg:w-[45%]">
+          <h1 className="text-xl font-light lg:text-4xl xl:text-[50px] mb-4 leading-[100px]">
+            We help you to boost your business profitable with our talent
+            marketer
+          </h1>
+
+          <p className="mt-6">
+            Get your tests delivered at let home collect sample sample from the
+            victory of the managements that supplies best design system
+            guidelines ever.
+          </p>
+
+          <div className="flex gap-1 items-center mt-6">
+            <AiFillCheckCircle className="text-green-400 text-xl" />
+            <p className="text-lg font-semibold">
+              Unlimited design possibility
+            </p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <AiFillCheckCircle className="text-green-400 text-xl" />
+            <p className="text-lg font-semibold">
+              Completely responsive features
+            </p>
+          </div>
+          <div className="flex items-center gap-2 cursor-pointer text-[#b22fae] mt-4 hover:scale-95 hover:text-[#23a34f] group">
+            <p className="text-lg">Explore Details</p>
+            <AiOutlineRight className="group-hover:ml-4" />
+          </div>
+        </div>
+      </div>
+
+      {/* Feature content */}
+      <div className="flex flex-col lg:flex-row my-20 lg:gap-14 xl:gap-[70px] items-center">
+        <div className="lg:w-[45%]">
+          <h1 className="text-xl font-light lg:text-4xl xl:text-[50px] mb-4 leading-[100px]">
+            We help you to boost your business profitable with our talent
+            marketer
+          </h1>
+
+          <p className="mt-6">
+            Get your tests delivered at let home collect sample sample from the
+            victory of the managements that supplies best design system
+            guidelines ever.
+          </p>
+
+          <div className="flex gap-1 items-center mt-6">
+            <AiFillCheckCircle className="text-green-400 text-xl" />
+            <p className="text-lg font-semibold">
+              Unlimited design possibility
+            </p>
+          </div>
+          <div className="flex gap-1 items-center">
+            <AiFillCheckCircle className="text-green-400 text-xl" />
+            <p className="text-lg font-semibold">
+              Completely responsive features
+            </p>
+          </div>
+          <div className="flex items-center gap-2 cursor-pointer text-[#b22fae] mt-4 hover:scale-95 hover:text-[#23a34f] group">
+            <p className="text-lg">Explore Details</p>
+            <AiOutlineRight className="group-hover:ml-4" />
+          </div>
+        </div>
+
+        <div className="lg:w-[55%]">
+          <img src={feature1} alt="featureImage" className="w-full" />
+        </div>
       </div>
     </div>
   );
