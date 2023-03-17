@@ -33,7 +33,7 @@ const AnimatedCard = ({ stat }) => {
       ref={ref}
     >
       <div className="lg:text-lg font-semibold text-gray-700 mb-4">{title}</div>
-      <div className="text-4xl font-bold text-green-500 animate-grow">
+      <div className="text-4xl font-bold text-[#23a2ad] animate-grow">
         {values}
         {suffix && suffix}
       </div>

@@ -7,7 +7,7 @@ import AnimatedCard from "./AnimatedCard";
 
 const Service = () => {
   return (
-    <section className="pt-10 px-4 lg:px-24 xl:px-30 pb-4">
+    <section className="pt-10 px-4 lg:px-20 xl:px-20 pb-4">
       <h1 className="text-center text-[#b22fae] font-semibold text-xl mb-4">
         QUALITY SERVICES
       </h1>

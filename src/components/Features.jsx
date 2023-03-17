@@ -37,7 +37,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="featureBg w-full min-h-[70vh] px-4 lg:px-24 xl:px-30">
+    <div className="featureBg w-full min-h-[70vh] px-4 lg:px-20 xl:px-30">
       <h1 className="mt-[80px] text-center text-[#b22fae] font-semibold text-xl">
         QUALITY FEATURES
       </h1>
@@ -51,30 +51,30 @@ const Features = () => {
       </div>
 
       {/* Feature content */}
-      <div className="flex flex-col lg:flex-row my-20 lg:gap-14 xl:gap-[70px] items-center">
+      <div className="flex flex-col lg:flex-row lg:gap-5 xl:gap-[30px] items-center">
         <div className="lg:w-[55%]">
           <img src={feature} alt="featureImage" className="w-full" />
         </div>
         <div className="lg:w-[45%]">
-          <h1 className="text-xl font-light lg:text-4xl xl:text-[50px] mb-4 leading-[100px]">
+          <h1 className="text-xl font-light lg:text-4xl xl:text-[50px]">
             We help you to boost your business profitable with our talent
             marketer
           </h1>
 
-          <p className="mt-6">
+          <p className="mt-3 lg:mt-5">
             Get your tests delivered at let home collect sample sample from the
             victory of the managements that supplies best design system
             guidelines ever.
           </p>
 
-          <div className="flex gap-1 items-center mt-6">
-            <AiFillCheckCircle className="text-green-400 text-xl" />
+          <div className="flex gap-1 items-center mt-3 lg:mt-5">
+            <AiFillCheckCircle className="text-[#23a2ad] text-xl" />
             <p className="text-lg font-semibold">
               Unlimited design possibility
             </p>
           </div>
           <div className="flex gap-1 items-center">
-            <AiFillCheckCircle className="text-green-400 text-xl" />
+            <AiFillCheckCircle className="text-[#23a2ad] text-xl" />
             <p className="text-lg font-semibold">
               Completely responsive features
             </p>
@@ -87,27 +87,27 @@ const Features = () => {
       </div>
 
       {/* Feature content */}
-      <div className="flex flex-col lg:flex-row my-20 lg:gap-14 xl:gap-[70px] items-center">
+      <div className="flex flex-col-reverse lg:flex-row my-20 lg:gap-5 xl:gap-[30px] items-center">
         <div className="lg:w-[45%]">
-          <h1 className="text-xl font-light lg:text-4xl xl:text-[50px] mb-4 leading-[100px]">
+          <h1 className="text-xl font-light lg:text-4xl xl:text-[50px]">
             We help you to boost your business profitable with our talent
             marketer
           </h1>
 
-          <p className="mt-6">
+          <p className="mt-3 lg:mt-5">
             Get your tests delivered at let home collect sample sample from the
             victory of the managements that supplies best design system
             guidelines ever.
           </p>
 
-          <div className="flex gap-1 items-center mt-6">
-            <AiFillCheckCircle className="text-green-400 text-xl" />
+          <div className="flex gap-1 items-center mt-3 lg:mt-5">
+            <AiFillCheckCircle className="text-[#23a2ad] text-xl" />
             <p className="text-lg font-semibold">
               Unlimited design possibility
             </p>
           </div>
           <div className="flex gap-1 items-center">
-            <AiFillCheckCircle className="text-green-400 text-xl" />
+            <AiFillCheckCircle className="text-[#23a2ad] text-xl" />
             <p className="text-lg font-semibold">
               Completely responsive features
             </p>

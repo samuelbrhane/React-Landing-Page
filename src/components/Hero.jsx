@@ -3,7 +3,7 @@ import heroImage from "../assets/heroImage.png";
 
 const Hero = () => {
   return (
-    <div className="relative h-[calc(100vh-75px)] mt-[75px] px-4 bg-[url('https://cutewallpaper.org/21/white-background-gif/Tag-For-White-Background-File-Hart-S-Inversor-On-White-.gif')] bg-cover bg-center bg-no-repeat">
+    <div className="relative h-[calc(100vh-75px)] px-4 lg:px-20 xl:px-30 mt-[75px] bg-[url('https://cutewallpaper.org/21/white-background-gif/Tag-For-White-Background-File-Hart-S-Inversor-On-White-.gif')] bg-cover bg-center bg-no-repeat">
       <div className="flex items-start justify-center w-full pt-[50px]">
         <div className="flex items-center  flex-col justify-center lg:w-[50%] xl:w-[45%] pt-[20px]">
           <h1 className="text-2xl tracking-tight text-center font-bold text-gray-900 sm:text-6xl md:text-7xl mb-4">
