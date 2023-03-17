@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .priceBtn {
+    @apply bg-transparent px-6 lg:px-8 xl:px-12 py-2 xl:py-3 text-lg font-semibold rounded-md;
+  }
+  .line {
+    @apply w-[100px] h-[0.5px] bg-black;
+  }
+}
+
 @keyframes grow {
   from {
     color: #4b5563;

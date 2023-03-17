@@ -1,0 +1,48 @@
+export const yearly = [
+  {
+    name: "Basic Plan",
+    monthly_price: 9.99,
+    yearly_price: 99.99,
+    features: [
+      "Up to 5 projects",
+      "Unlimited tasks",
+      "Basic project management features",
+      "Limited integrations",
+      "Email support",
+    ],
+    recommended: false,
+    suitable: "For small teams or offices",
+  },
+  {
+    name: "Standard Plan",
+    monthly_price: 19.99,
+    yearly_price: 199.99,
+    features: [
+      "Up to 15 projects",
+      "Unlimited tasks",
+      "Advanced project management features",
+      "More integrations",
+      "Priority email support",
+      "Mobile app access",
+    ],
+    recommended: false,
+    suitable: "For medium-sized teams and departments",
+  },
+  {
+    name: "Premium Plan",
+    monthly_price: 39.99,
+    yearly_price: 399.99,
+    features: [
+      "Unlimited projects",
+      "Unlimited tasks",
+      "Advanced project management features",
+      "Full integrations",
+      "Priority email and phone support",
+      "Mobile and desktop app access",
+      "Team collaboration features",
+      "Analytics and reporting features",
+    ],
+    recommended: true,
+    suitable: "For large and complex organizations",
+  },
+];
