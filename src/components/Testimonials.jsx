@@ -33,7 +33,7 @@ const Testimonial = () => {
       </h1>
 
       <div
-        className="flex items-center gap-6 md:gap-8 overflow-x-scroll scrollbar-hide py-6"
+        className="flex items-center gap-4 md:gap-12 xl:gap-4 overflow-x-scroll scrollbar-hide py-6"
         ref={categoryRef}
       >
         {testimonials.map((testimonial, index) => (

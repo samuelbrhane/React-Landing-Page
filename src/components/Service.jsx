@@ -11,8 +11,8 @@ const Service = () => {
       <h1 className="text-center text-[#b22fae] font-semibold text-xl mb-4">
         QUALITY SERVICES
       </h1>
-      <p className="text-center font-bold text-xl mb-3">List of Our Services</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 sm:gap-4 md:gap-6 lg:gap-12">
+      <p className="text-center font-bold text-xl mb-6">List of Our Services</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-4">
         {services.map((service, index) => (
           <ServiceCard key={index} service={service} />
         ))}

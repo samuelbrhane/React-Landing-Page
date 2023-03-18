@@ -40,7 +40,7 @@ const Pricing = () => {
       </div>
 
       {/* pricing card */}
-      <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-8 mb-8">
+      <div className="grid grid-cols md:grid-cols-2 xl:grid-cols-3 md:gap-4 lg:gap-8 mb-8">
         {currentPlan === "monthly"
           ? monthly.map((plan, index) => (
               <PricingCard key={index} plan={plan} type="monthly" />

@@ -5,13 +5,13 @@ import logo from "../assets/logo.jpg";
 
 const Footer = () => {
   return (
-    <div className="min-h-[90vh] relative">
+    <div className="min-h-[80vh] relative">
       <div className="footerDivider w-full h-full absolute" />
 
       <div className="absolute top-0 left-0 w-full  pt-20 pb-5  z-20 px-4 lg:px-20 xl:px-30 ">
         {/* Subscribe */}
         <div className="flex flex-col items-center">
-          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#b22fae] mb-4">
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#b22fae] mb-4 text-center">
             Subscribe to get notified about event
           </h1>
           <p className="mb-6 text-center text-gray-400">
@@ -36,8 +36,8 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="mt-5 flex flex-col lg:flex-row lg:justify-between items-center">
-          <div className="flex gap-4 items-center lg:gap-8">
+        <div className="mt-5 flex flex-col lg:flex-row lg:justify-between lg:items-center ">
+          <div className="flex items-center justify-between lg:justify-start gap-8 ">
             <div className="flex items-center gap-2">
               <img
                 src={logo}
@@ -51,7 +51,7 @@ const Footer = () => {
             <p>Copyright by 2023 Samuel Brhane</p>
           </div>
 
-          <ul className="hidden md:flex items-center gap-4 lg:gap-6">
+          <ul className="hidden lg:flex items-center gap-4 lg:gap-6">
             <li>Home</li>
             <li>Service</li>
             <li>Features</li>

@@ -5,7 +5,7 @@ import { Rating } from "@mui/material";
 const TestimonialCard = ({ testimonial }) => {
   const { name, username, text, title, image, rating } = testimonial;
   return (
-    <div className="relative flex flex-col justify-between h-[370px] min-w-[315px] bg-white testimonial hover:scale-[1.01] cursor-pointer shadow hover:shadow-md px-4 py-7">
+    <div className="relative flex flex-col justify-between h-[370px] min-w-[330px] bg-white testimonial hover:scale-[1.01] cursor-pointer shadow hover:shadow-md px-3 py-7">
       <div>
         <Rating name="rating" value={rating} style={{ color: "#23a2ad" }} />
         <p className="text-lg font-bold mt-4 mb-3">{title}</p>
