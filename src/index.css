@@ -9,6 +9,9 @@
   .line {
     @apply w-[100px] h-[0.5px] bg-black;
   }
+  .active {
+    @apply text-[#b22fae];
+  }
 }
 
 @keyframes grow {

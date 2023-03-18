@@ -24,7 +24,7 @@ const Testimonial = () => {
     }
   };
   return (
-    <div className="mb-6 px-4 lg:px-20 xl:px-30">
+    <div id="Testimonials" className="mb-6 pt-4 px-4 lg:px-20 xl:px-30">
       <h1 className="text-center text-[#b22fae] font-semibold text-xl">
         TESTIMONIALS
       </h1>

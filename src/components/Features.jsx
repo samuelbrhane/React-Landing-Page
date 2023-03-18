@@ -37,7 +37,10 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="featureBg w-full min-h-[70vh] px-4 lg:px-20 xl:px-30">
+    <div
+      id="Features"
+      className="featureBg w-full min-h-[70vh] px-4 lg:px-20 xl:px-30"
+    >
       <h1 className="mt-[80px] text-center text-[#b22fae] font-semibold text-xl">
         QUALITY FEATURES
       </h1>
@@ -87,7 +90,7 @@ const Features = () => {
       </div>
 
       {/* Feature content */}
-      <div className="flex flex-col-reverse lg:flex-row my-20 lg:gap-5 xl:gap-[30px] items-center">
+      <div className="flex flex-col-reverse lg:flex-row mb-10  -mt-10 lg:gap-5 xl:gap-[30px] items-center">
         <div className="lg:w-[45%]">
           <h1 className="text-xl font-light lg:text-4xl xl:text-[50px]">
             We help you to boost your business profitable with our talent

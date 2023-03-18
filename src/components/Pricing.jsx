@@ -12,8 +12,8 @@ const Pricing = () => {
   };
 
   return (
-    <section className="px-4 lg:px-20 xl:px-30">
-      <h1 className="mt-[80px] text-center text-[#b22fae] font-semibold text-xl">
+    <section id="Pricing" className="px-4 pt-2 lg:px-20 xl:px-30 pt-10">
+      <h1 className="text-center text-[#b22fae] font-semibold text-xl">
         PRICING PLAN
       </h1>
       <h1 className="text-center  font-bold text-xl mt-3 mb-6 lg:mb-8">

@@ -14,7 +14,7 @@ const About = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
-    <section className="mt-16 px-4 lg:px-20 xl:px-30">
+    <section className="mt-20 px-4 lg:px-20 xl:px-30" id="About">
       <h1 className="text-center text-[#b22fae] font-semibold text-xl">
         ABOUT US
       </h1>
