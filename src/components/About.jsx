@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { blogs } from "../utils/blogPosts";
 import BlogCard from "./BlogCard";
 import { AiFillCheckCircle } from "react-icons/ai";
@@ -6,8 +6,12 @@ import play from "../assets/play.gif";
 import blob from "../assets/blob1.svg";
 import blob1 from "../assets/blob2.svg";
 import blob2 from "../assets/blob3.svg";
+import ReactPlayer from "react-player";
+import { FaTimes } from "react-icons/fa";
 
 const About = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
   return (
     <section className="mt-16 px-4 lg:px-20 xl:px-30">
       <h1 className="text-center text-[#b22fae] font-semibold text-xl">
@@ -33,9 +37,10 @@ const About = () => {
             className="h-[470px] rounded-md z-20"
           />
           <img
+            onClick={() => setIsVideoOpen(true)}
             src={play}
             alt="playImage"
-            className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[120px] h-[120px] rounded-full"
+            className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[120px] h-[120px] rounded-full cursor-pointer"
           />
           <div className="absolute -bottom-14 -left-20 -z-30">
             <img
@@ -91,6 +96,25 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Video modal */}
+      {isVideoOpen && (
+        <div className="fixed top-0 bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.5)] flex items-center justify-center">
+          <div className="w-full h-full px-4 md:px-12 lg:px-24 xl:px-30 pb-4 md:pb-8 py-[100px]">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=T5oS5DHtCt0"
+              width="100%"
+              height="100%"
+              playing
+              style={{ borderRadius: 20 }}
+            />
+          </div>
+          <FaTimes
+            className="absolute top-[100px] right-2 md:right-10 lg:right-22 z-20 text-4xl text-white cursor-pointer"
+            onClick={() => setIsVideoOpen(false)}
+          />
+        </div>
+      )}
     </section>
   );
 };

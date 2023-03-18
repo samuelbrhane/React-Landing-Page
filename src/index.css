@@ -70,3 +70,16 @@
     background-size: 100% calc(2vw + 90px);
   }
 }
+
+.playerWrapper {
+  width: 100%;
+  height: 100%;
+}
+.reactPlayer {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.reactPlayer > div {
+  position: absolute;
+}
