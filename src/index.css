@@ -83,3 +83,46 @@
 .reactPlayer > div {
   position: absolute;
 }
+
+.footerDivider {
+  overflow: hidden;
+  position: absolute;
+}
+.footerDivider::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 90px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 476.62 100.69"><path fill="%2333beff" d="M0 0v100.69L238.3 5.22l238.32 95.47V0Z"/></svg>');
+}
+
+@media (min-width: 768px) {
+  .footerDivider::before {
+    background-size: 100% 90px;
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footerDivider::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 300px;
+    background-position: 80% 0%;
+  }
+}
+@media (min-width: 2100px) {
+  .footerDivider::before {
+    background-size: 100% calc(2vw + 90px);
+  }
+}

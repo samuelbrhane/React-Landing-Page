@@ -1,6 +1,7 @@
 import {
   About,
   Features,
+  Footer,
   Header,
   Hero,
   Service,
@@ -18,6 +19,7 @@ function App() {
       <Testimonials />
       <Pricing />
       <About />
+      <Footer />
     </main>
   );
 }

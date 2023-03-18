@@ -58,8 +58,8 @@ const Questions = () => {
                 </svg>
               </button>
               <div
-                className={`px-6 pb-4 ${
-                  index === activeQuestion ? "block" : "hidden"
+                className={`px-6 pb-1 transition-max-height duration-[1s] ease-out overflow-hidden ${
+                  index === activeQuestion ? "max-h-96" : "max-h-0"
                 }`}
               >
                 <p className="text-gray-700">{item.answer}</p>
