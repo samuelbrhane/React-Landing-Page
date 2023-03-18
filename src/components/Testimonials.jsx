@@ -4,6 +4,7 @@ import TestimonialCard from "./TestimonialCard";
 import { testimonials } from "../utils/testimonials";
 import users from "../assets/users.png";
 import { AiFillCheckCircle, AiOutlineRight } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Testimonial = () => {
   const categoryRef = useRef(null);
@@ -24,7 +25,7 @@ const Testimonial = () => {
     }
   };
   return (
-    <div id="Testimonials" className="mb-6 pt-4 px-4 lg:px-20 xl:px-30">
+    <div id="Testimonials" className="px-4 lg:px-20 xl:px-30 relative py-12">
       <h1 className="text-center text-[#b22fae] font-semibold text-xl">
         TESTIMONIALS
       </h1>
@@ -54,20 +55,52 @@ const Testimonial = () => {
 
       {/* Worldwide users */}
       <div className="flex flex-col lg:flex-row lg:gap-5 xl:gap-[30px] items-center">
-        <div className="lg:w-[55%] mt-4">
+        <motion.div
+          initial={{ left: -30, opacity: 0.8 }}
+          whileInView={{ left: 0, opacity: 1 }}
+          transition={{
+            duration: 1.2,
+            type: "spring",
+            bounce: 0.2,
+            delay: 0.5,
+          }}
+          className="lg:w-[55%] mt-4 relative"
+        >
           <img src={users} alt="featureImage" className="w-full" />
-        </div>
-        <div className="lg:w-[45%]">
+        </motion.div>
+        <motion.div
+          initial={{ right: -30, opacity: 0.8 }}
+          whileInView={{ right: 0, opacity: 1 }}
+          transition={{
+            duration: 1.2,
+            type: "spring",
+            bounce: 0.2,
+            delay: 0.5,
+          }}
+          className="lg:w-[45%] relative"
+        >
           <h1 className="text-xl font-light lg:text-4xl xl:text-[50px] mb-4">
-            We help you to boost your business profitable with our talent
-            marketer
+            We have more than thousand of worldwide happy customer.
           </h1>
 
           <p className="mt-3 lg:mt-5">
-            Get your tests delivered at let home collect sample sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+            Co-working offers beautifully crafted workspaces where people can
+            create, connect, and grow their businesses at prime locations in
+            multiple cities.
           </p>
+
+          <p className="mt-1">
+            Co-working offers beautifully crafted workspaces where people can
+            create, connect, and grow their businesses at prime locations in
+            multiple cities.
+          </p>
+
+          <div className="flex gap-1 items-center mt-3 lg:mt-5">
+            <AiFillCheckCircle className="text-[#23a2ad] text-xl" />
+            <p className="text-lg font-semibold">
+              Unlimited design possibility
+            </p>
+          </div>
 
           <div className="flex gap-1 items-center mt-3 lg:mt-5">
             <AiFillCheckCircle className="text-[#23a2ad] text-xl" />
@@ -80,7 +113,7 @@ const Testimonial = () => {
             <p className="text-lg">Learn More</p>
             <AiOutlineRight className="group-hover:ml-4" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

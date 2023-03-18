@@ -11,7 +11,7 @@ import Pricing from "./components/Pricing";
 
 function App() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Header />
       <Hero />
       <Service />

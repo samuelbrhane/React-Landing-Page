@@ -8,17 +8,17 @@ export const serviceStat = [
   {
     title: "People Impacted",
     value: 3783,
-    time: 0.05,
+    time: 0.04,
   },
   {
     title: "Number of Users",
     value: 4352,
-    time: 0.05,
+    time: 0.03,
   },
   {
     title: "Volunteer Developers",
     value: 76,
-    time: 130,
+    time: 100,
     suffix: "+",
   },
 ];

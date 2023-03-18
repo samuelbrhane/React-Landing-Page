@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { monthly } from "../utils/monthly";
 import { yearly } from "../utils/yearly";
 import PricingCard from "./PricingCard";
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   const [currentPlan, setCurrentPlan] = useState("monthly");
@@ -12,7 +13,7 @@ const Pricing = () => {
   };
 
   return (
-    <section id="Pricing" className="px-4 pt-2 lg:px-20 xl:px-30 pt-10">
+    <section id="Pricing" className="px-4 relative lg:px-20 xl:px-30 py-12">
       <h1 className="text-center text-[#b22fae] font-semibold text-xl">
         PRICING PLAN
       </h1>
@@ -23,7 +24,7 @@ const Pricing = () => {
       {/* pricing plans */}
       <div className="flex justify-center mb-6 lg:mb-8 ">
         <div
-          className="bg-gray-100 p-3 rounded-md flex items-center gap-4 lg:gap-6 cursor-pointer"
+          className="bg-gray-100 p-3 rounded-md flex items-center gap-4 lg:gap-6 cursor-pointer duration-1000 ease-out"
           onClick={changePlan}
         >
           <button
@@ -40,7 +41,7 @@ const Pricing = () => {
       </div>
 
       {/* pricing card */}
-      <div className="grid grid-cols md:grid-cols-2 xl:grid-cols-3 md:gap-4 lg:gap-8 mb-8">
+      <div className="grid grid-cols md:grid-cols-2 xl:grid-cols-3 md:gap-4 lg:gap-8">
         {currentPlan === "monthly"
           ? monthly.map((plan, index) => (
               <PricingCard key={index} plan={plan} type="monthly" />

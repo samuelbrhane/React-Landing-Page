@@ -9,12 +9,13 @@ import blob2 from "../assets/blob3.svg";
 import ReactPlayer from "react-player";
 import { FaTimes } from "react-icons/fa";
 import Questions from "./Questions";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
-    <section className="mt-20 px-4 lg:px-20 xl:px-30" id="About">
+    <section className="px-4 lg:px-20 xl:px-30 relative py-12" id="About">
       <h1 className="text-center text-[#b22fae] font-semibold text-xl">
         ABOUT US
       </h1>
@@ -23,7 +24,7 @@ const About = () => {
       </h1>
 
       {/* blog posts */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 relative">
         {blogs.map((blog, index) => (
           <BlogCard key={index} blog={blog} />
         ))}
@@ -31,7 +32,17 @@ const About = () => {
 
       {/* How it works */}
       <div className="flex flex-col lg:flex-row lg:gap-5 xl:gap-[60px] mt-7 mb-14">
-        <div className="relative shadow-md lg:w-[50%] h-[470px]">
+        <motion.div
+          initial={{ left: -30, opacity: 0.8 }}
+          whileInView={{ left: 0, opacity: 1 }}
+          transition={{
+            duration: 1.2,
+            type: "spring",
+            bounce: 0.2,
+            delay: 0.5,
+          }}
+          className="relative shadow-md lg:w-[50%] h-[470px]"
+        >
           <img
             src="https://images.pexels.com/photos/7441079/pexels-photo-7441079.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="videoImage"
@@ -64,8 +75,18 @@ const About = () => {
               className="w-[400px] h-[330px] z-0"
             />
           </div>
-        </div>
-        <div className="lg:w-[50%]">
+        </motion.div>
+        <motion.div
+          initial={{ right: -30, opacity: 0.8 }}
+          whileInView={{ right: 0, opacity: 1 }}
+          transition={{
+            duration: 1.2,
+            type: "spring",
+            bounce: 0.2,
+            delay: 0.5,
+          }}
+          className="lg:w-[50%] relative mt-14 lg:mt-0"
+        >
           <h1 className="text-[#b22fae] font-semibold text-xl">
             WHATS THE FUNCTION
           </h1>
@@ -95,7 +116,7 @@ const About = () => {
               Completely responsive features
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Video modal */}

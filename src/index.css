@@ -89,7 +89,8 @@
 
 .footerDivider {
   overflow: hidden;
-  position: absolute;
+  position: relative;
+  width: 100%;
 }
 .footerDivider::before {
   content: "";

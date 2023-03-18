@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { faq } from "../utils/questions";
+import { motion } from "framer-motion";
 
 const Questions = () => {
   const [activeQuestion, setActiveQuestion] = useState(null);
@@ -29,7 +30,17 @@ const Questions = () => {
             Ask Your Question
           </button>
         </div>
-        <div className="lg:w-[50%]">
+        <motion.div
+          initial={{ right: -40, opacity: 0.8 }}
+          whileInView={{ right: 0, opacity: 1 }}
+          transition={{
+            duration: 1.1,
+            type: "spring",
+            bounce: 0.8,
+            delay: 0.3,
+          }}
+          className="lg:w-[50%] relative"
+        >
           {faq.map((item, index) => (
             <div
               key={index}
@@ -66,7 +77,7 @@ const Questions = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

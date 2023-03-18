@@ -5,10 +5,17 @@ import logo from "../assets/logo.jpg";
 
 const Footer = () => {
   return (
-    <div className="min-h-[80vh] relative">
-      <div className="footerDivider w-full h-full absolute" />
-
-      <div className="absolute top-0 left-0 w-full  pt-20 pb-5  z-20 px-4 lg:px-20 xl:px-30 ">
+    <div className="relative">
+      <div className="absolute bottom-0 left-0 w-full -z-10">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1440 220">
+          <path
+            fill="#33BEFF"
+            fillOpacity="1"
+            d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,128C840,139,960,213,1080,224C1200,235,1320,181,1380,154.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <div className="w-full  pt-6 pb-5  z-30 px-4 lg:px-20 xl:px-30 ">
         {/* Subscribe */}
         <div className="flex flex-col items-center">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#b22fae] mb-4 text-center">

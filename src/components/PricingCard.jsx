@@ -1,12 +1,23 @@
 import React from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const PricingCard = ({ plan, type }) => {
   const { name, price, features, recommended, suitable } = plan;
   return (
-    <div className="flex justify-center mb-4 md:px-4 xl:px-8">
+    <motion.div
+      initial={{ bottom: -30, opacity: 0.8 }}
+      whileInView={{ bottom: 0, opacity: 1 }}
+      transition={{
+        duration: 0.5,
+        type: "spring",
+        bounce: 0.2,
+        delay: 0.1,
+      }}
+      className="flex relative justify-center mb-4 md:px-4 xl:px-8"
+    >
       <div className="flex flex-col justify-between shadow hover:shadow-md h-[570px] w-full hover:scale-[1.02] py-6 px-4 rounded-lg">
-        <div>
+        <div className="">
           <h1 className="mb-1 font-bold text-xl md:text-2xl">{name}</h1>
           <p className="mb-4 font-semibold">{suitable}</p>
           {features.map((feature, index) => (
@@ -35,7 +46,7 @@ const PricingCard = ({ plan, type }) => {
           <p className="cursor-pointe text-[#b22fae]">Start 14 Days Trial</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
