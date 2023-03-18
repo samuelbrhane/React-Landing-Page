@@ -1,4 +1,11 @@
-import { Features, Header, Hero, Service, Testimonials } from "./components";
+import {
+  About,
+  Features,
+  Header,
+  Hero,
+  Service,
+  Testimonials,
+} from "./components";
 import Pricing from "./components/Pricing";
 
 function App() {
@@ -10,6 +17,7 @@ function App() {
       <Features />
       <Testimonials />
       <Pricing />
+      <About />
     </main>
   );
 }

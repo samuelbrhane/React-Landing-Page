@@ -21,7 +21,7 @@ const Header = () => {
         <li>Features</li>
         <li>Testimonial</li>
         <li>Pricing</li>
-        <li>News</li>
+        <li>About</li>
       </ul>
 
       {/* contact us */}

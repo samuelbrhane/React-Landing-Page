@@ -43,11 +43,11 @@ const Testimonial = () => {
 
       <div className="w-full flex items-center justify-center gap-4">
         <BsArrowLeft
-          className=" cursor-pointer text-lg text-gray-500 hover:text-gray-700 hover:scale-[1.1]"
+          className=" cursor-pointer text-gray-500 hover:text-gray-700 hover:scale-[1.1] text-2xl"
           onClick={() => handleScroll("left")}
         />
         <BsArrowRight
-          className=" cursor-pointer text-lg text-gray-500 hover:text-gray-700 hover:scale-[1.1]"
+          className=" cursor-pointer text-gray-500 hover:text-gray-700 hover:scale-[1.1] text-2xl"
           onClick={() => handleScroll("right")}
         />
       </div>

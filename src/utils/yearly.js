@@ -1,8 +1,7 @@
 export const yearly = [
   {
     name: "Basic Plan",
-    monthly_price: 9.99,
-    yearly_price: 99.99,
+    price: 99.99,
     features: [
       "Up to 5 projects",
       "Unlimited tasks",
@@ -15,8 +14,7 @@ export const yearly = [
   },
   {
     name: "Standard Plan",
-    monthly_price: 19.99,
-    yearly_price: 199.99,
+    price: 199.99,
     features: [
       "Up to 15 projects",
       "Unlimited tasks",
@@ -30,8 +28,7 @@ export const yearly = [
   },
   {
     name: "Premium Plan",
-    monthly_price: 39.99,
-    yearly_price: 399.99,
+    price: 399.99,
     features: [
       "Unlimited projects",
       "Unlimited tasks",

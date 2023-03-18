@@ -5,6 +5,12 @@ import PricingCard from "./PricingCard";
 
 const Pricing = () => {
   const [currentPlan, setCurrentPlan] = useState("monthly");
+
+  const changePlan = () => {
+    if (currentPlan === "monthly") setCurrentPlan("yearly");
+    else setCurrentPlan("monthly");
+  };
+
   return (
     <section className="px-4 lg:px-20 xl:px-30">
       <h1 className="mt-[80px] text-center text-[#b22fae] font-semibold text-xl">
@@ -16,7 +22,10 @@ const Pricing = () => {
 
       {/* pricing plans */}
       <div className="flex justify-center mb-6 lg:mb-8 ">
-        <div className="bg-gray-100 p-3 rounded-md flex items-center gap-4 lg:gap-6">
+        <div
+          className="bg-gray-100 p-3 rounded-md flex items-center gap-4 lg:gap-6 cursor-pointer"
+          onClick={changePlan}
+        >
           <button
             className={`priceBtn ${currentPlan === "monthly" && "!bg-white"}`}
           >
@@ -32,9 +41,13 @@ const Pricing = () => {
 
       {/* pricing card */}
       <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-8 mb-8">
-        {monthly.map((plan, index) => (
-          <PricingCard key={index} plan={plan} />
-        ))}
+        {currentPlan === "monthly"
+          ? monthly.map((plan, index) => (
+              <PricingCard key={index} plan={plan} type="monthly" />
+            ))
+          : yearly.map((plan, index) => (
+              <PricingCard key={index} plan={plan} />
+            ))}
       </div>
     </section>
   );

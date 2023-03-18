@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 
-const PricingCard = ({ plan }) => {
+const PricingCard = ({ plan, type }) => {
   const { name, price, features, recommended, suitable } = plan;
   return (
     <div className="flex justify-center mb-4 md:px-4 xl:px-8">
@@ -19,7 +19,9 @@ const PricingCard = ({ plan }) => {
         <div className="flex flex-col items-center">
           <p className="text-3xl font-semibold">
             ${price}
-            <span className="font-light text-lg">/Monthly</span>
+            <span className="font-light text-lg">
+              {type === "monthly" ? "/Month" : "/Year"}
+            </span>
           </p>
           <button className="relative my-4 inline-block px-8 py-3 border-2 rounded-full  bg-[#b22fae] text-white font-bold overflow-hidden transition-all duration-500 ease-in-out hover:bg-transparent hover:text-[#b22fae]">
             Create account
