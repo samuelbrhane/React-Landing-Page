@@ -8,6 +8,7 @@ import blob1 from "../assets/blob2.svg";
 import blob2 from "../assets/blob3.svg";
 import ReactPlayer from "react-player";
 import { FaTimes } from "react-icons/fa";
+import Questions from "./Questions";
 
 const About = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -49,7 +50,7 @@ const About = () => {
               className="w-[300px] h-[330px] z-0"
             />
           </div>
-          <div className="absolute -bottom-32 -left-10 -z-10 ">
+          <div className="absolute -bottom-20 -left-10 -z-10 ">
             <img
               src={blob1}
               alt="playImage"
@@ -115,6 +116,9 @@ const About = () => {
           />
         </div>
       )}
+
+      {/* Faq */}
+      <Questions />
     </section>
   );
 };
